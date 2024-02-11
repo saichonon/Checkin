@@ -1,0 +1,117 @@
+body {
+    font-family: 'line_seed_sans_th';
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card {
+    width: 320px;
+    height: 380px;
+    padding: 0 15px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 20px;
+  }
+
+  .card>* {
+    margin: 0;
+  }
+
+  .card__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: #333;
+  }
+
+  .card__content {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+  }
+
+  .card__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card__form input {
+    margin-top: 10px;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: transparent 0px 0px 0px 1px inset;
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.6em;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  .card__form button {
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+
+  .sign-up:hover {
+    opacity: 0.8;
+  }
+
+  #loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(250, 250, 250, 0.85);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 8px solid rgba(250, 250, 250, 0.2);
+    border-top: 8px solid #09f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
